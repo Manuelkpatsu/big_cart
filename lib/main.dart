@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'theme/custom_theme.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -12,10 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Big Cart',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: CustomTheme.theme,
       home: const MyHomePage(),
     );
   }

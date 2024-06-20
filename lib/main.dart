@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screen/auth/onboard/onboard_screen.dart';
 import 'theme/custom_theme.dart';
 
 void main() {
@@ -15,27 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Big Cart',
       theme: CustomTheme.theme,
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Big Cart'),
-      ),
-      body: Center(
-        child: Text(
-          'You are welcome',
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
-      ),
+      home: const OnboardScreen(),
     );
   }
 }

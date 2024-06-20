@@ -9,4 +9,9 @@ class CustomColor {
   static const Color primaryColor = Color(0xffaedc81);
   static const Color primaryDarkColor = Color(0xff6cc51d);
   static const Color primaryLightColor = Color(0xffebffd7);
+  static const Color dotColor = Color(0xffdcdcdc);
+  static const LinearGradient linearGradient = LinearGradient(
+    stops: [0.01, 1.0],
+    colors: [primaryColor, primaryDarkColor],
+  );
 }

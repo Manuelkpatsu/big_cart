@@ -9,6 +9,7 @@ class TextStrings {
   static const String onBoardingTitle31 = "Buy Grocery";
   static const String onBoardingTitle32 = "Fast Delivery";
   static const String onBoardingTitle33 = "Enjoy Quality Food";
+  static const String onBoardingTitle21 = "Premium Food\nAt Your Doorstep";
 
   static const String onBoardingSubTitle =
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy";

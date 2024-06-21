@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screen/auth/onboard_three/onboard_three_screen.dart';
+import 'screen/auth/onboard_two/onboard_two_screen.dart';
 import 'theme/custom_theme.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Big Cart',
       theme: CustomTheme.theme,
-      home: const OnboardThreeScreen(),
+      home: const OnboardTwoScreen(),
     );
   }
 }

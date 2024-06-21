@@ -18,4 +18,10 @@ class TextStrings {
   static const String getStarted = "Get Started";
   static const String skip = "Skip";
   static const String next = "Next";
+  static const String createAccount = "Create an account";
+  static const String google = "Continue with google";
+
+  static const String welcome = "Welcome";
+  static const String login = "Login";
+  static const String haveAccount = "Already have an account?";
 }

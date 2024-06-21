@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'router.dart';
 import 'screen/auth/onboard/onboard_screen.dart';
 import 'theme/custom_theme.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Big Cart',
       theme: CustomTheme.theme,
-      home: const OnboardScreen(),
+      initialRoute: OnboardScreen.routeName,
+      onGenerateRoute: AppRouter.generateRoute,
     );
   }
 }

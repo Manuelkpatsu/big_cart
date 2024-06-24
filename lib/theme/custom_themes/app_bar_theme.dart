@@ -10,6 +10,6 @@ class CartAppBarTheme {
     foregroundColor: Colors.black,
     iconTheme: IconThemeData(color: Colors.black),
     systemOverlayStyle: SystemUiOverlayStyle.dark,
-    titleTextStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+    titleTextStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.w400, color: Colors.black),
   );
 }

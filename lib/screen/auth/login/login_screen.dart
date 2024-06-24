@@ -1,3 +1,4 @@
+import 'package:big_cart_app/screen/auth/forgot_password/forgot_password_screen.dart';
 import 'package:big_cart_app/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:big_cart_app/screen/widget/app_switch.dart';
 import 'package:big_cart_app/screen/widget/auth_app_bar.dart';
@@ -85,7 +86,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         const Text(TextStrings.rememberMe),
                         const Spacer(),
-                        ForgotPasswordButton(onPressed: () {}),
+                        ForgotPasswordButton(
+                          onPressed: () => HelperFunctions.navigateToScreen(
+                            context: context,
+                            routeName: ForgotPasswordScreen.routeName,
+                          ),
+                        ),
                       ],
                     ),
                     const SizedBox(height: 10),

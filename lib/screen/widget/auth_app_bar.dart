@@ -10,7 +10,14 @@ class AccountAppBar extends AppBar {
       : super(
           backgroundColor: Colors.transparent,
           iconTheme: const IconThemeData().copyWith(color: Colors.white),
-          title: const Text('Welcome'),
+          title: const Text(
+            'Welcome',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
           foregroundColor: Colors.white,
           centerTitle: true,
           leading: BackIconButton(onPressed: onPressed),

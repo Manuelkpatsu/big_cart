@@ -9,7 +9,7 @@ import 'custom_themes/text_field_theme.dart';
 class CustomTheme {
   static ThemeData get theme {
     return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
+      scaffoldBackgroundColor: CustomColor.backgroundColor,
       primaryColor: CustomColor.primaryColor,
       canvasColor: Colors.transparent,
       appBarTheme: CartAppBarTheme.appBarTheme,

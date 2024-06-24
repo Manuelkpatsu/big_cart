@@ -23,6 +23,7 @@ class TextStrings {
   static const String forgotPassword = "Forgot password";
   static const String login = "Login";
   static const String signUp = "Sign up";
+  static const String sendLink = "Send link";
 
   // Authentication
   static const String welcome = "Welcome";
@@ -36,4 +37,8 @@ class TextStrings {
   static const String rememberMe = "Remember me";
   static const String signUpTitle = "Create account";
   static const String signUpSubTitle = "Quickly create account";
+  static const String forgotPasswordTitle = "Forgot Password";
+  static const String forgotPasswordSubTitle =
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy";
+  static const String forgotPasswordAppBarTitle = "Password Recovery";
 }

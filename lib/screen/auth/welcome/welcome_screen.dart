@@ -1,7 +1,7 @@
 import 'package:big_cart_app/screen/auth/login/login_screen.dart';
 import 'package:big_cart_app/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:big_cart_app/screen/widget/auth_app_bar.dart';
-import 'package:big_cart_app/theme/custom_color.dart';
+import 'package:big_cart_app/screen/widget/auth_widget.dart';
 import 'package:big_cart_app/utils/constants/image_strings.dart';
 import 'package:big_cart_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -36,38 +36,30 @@ class WelcomeScreen extends StatelessWidget {
               colorBlendMode: BlendMode.darken,
               color: Colors.black26,
             ),
-            Positioned(
-              bottom: 0,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.41,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
-                  color: CustomColor.backgroundColor,
-                ),
-                child: ListView(
-                  padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
-                  children: [
-                    const WelcomeText(),
-                    const WelcomeInfoText(),
-                    const SizedBox(height: 25),
-                    GoogleButton(onPressed: () {}),
-                    const SizedBox(height: 10),
-                    CreateAccountButton(
-                      onPressed: () => HelperFunctions.navigateToScreen(
-                        context: context,
-                        routeName: SignUpScreen.routeName,
-                      ),
+            AuthWidget(
+              height: MediaQuery.of(context).size.height * 0.41,
+              child: ListView(
+                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+                children: [
+                  const WelcomeText(),
+                  const WelcomeInfoText(),
+                  const SizedBox(height: 25),
+                  GoogleButton(onPressed: () {}),
+                  const SizedBox(height: 10),
+                  CreateAccountButton(
+                    onPressed: () => HelperFunctions.navigateToScreen(
+                      context: context,
+                      routeName: SignUpScreen.routeName,
                     ),
-                    const SizedBox(height: 5),
-                    HaveAccountButton(
-                      onTap: () => HelperFunctions.navigateToScreen(
-                        context: context,
-                        routeName: LoginScreen.routeName,
-                      ),
+                  ),
+                  const SizedBox(height: 5),
+                  HaveAccountButton(
+                    onTap: () => HelperFunctions.navigateToScreen(
+                      context: context,
+                      routeName: LoginScreen.routeName,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ],

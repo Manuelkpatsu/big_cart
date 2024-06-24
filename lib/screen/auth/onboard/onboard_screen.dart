@@ -1,7 +1,7 @@
 import 'package:big_cart_app/model/page_view_model.dart';
 import 'package:big_cart_app/screen/auth/welcome/welcome_screen.dart';
-import 'package:big_cart_app/screen/auth/widget/onboarding_get_started_button.dart';
-import 'package:big_cart_app/screen/auth/widget/onboarding_page_indicator.dart';
+import 'package:big_cart_app/screen/widget/onboarding_get_started_button.dart';
+import 'package:big_cart_app/screen/widget/onboarding_page_indicator.dart';
 import 'package:big_cart_app/utils/constants/image_strings.dart';
 import 'package:big_cart_app/utils/constants/text_strings.dart';
 import 'package:big_cart_app/utils/helpers/helper_functions.dart';

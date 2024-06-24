@@ -1,6 +1,6 @@
 import 'package:big_cart_app/model/page_view_model.dart';
-import 'package:big_cart_app/screen/auth/widget/onboard_body_text.dart';
-import 'package:big_cart_app/screen/auth/widget/onboard_title_text.dart';
+import 'package:big_cart_app/screen/widget/onboard_body_text.dart';
+import 'package:big_cart_app/screen/widget/onboard_title_text.dart';
 import 'package:flutter/material.dart';
 
 import 'logo.dart';

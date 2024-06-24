@@ -11,6 +11,10 @@ class CustomColor {
   static const Color primaryLightColor = Color(0xffebffd7);
   static const Color dotColor = Color(0xffdcdcdc);
   static const Color textButtonColor = Color(0xffc4c4c4);
+  static const Color redColor = Color(0xfffe585a);
+  static const Color deleteColor = Color(0xffef574b);
+  static const Color yellowColor = Color(0xffffc107);
+  static const Color textFieldTextColor = Color(0xff101010);
   static const LinearGradient linearGradient = LinearGradient(
     stops: [0.01, 1.0],
     colors: [primaryColor, primaryDarkColor],

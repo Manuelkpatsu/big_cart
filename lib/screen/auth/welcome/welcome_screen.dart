@@ -1,3 +1,4 @@
+import 'package:big_cart_app/screen/auth/login/login_screen.dart';
 import 'package:big_cart_app/screen/widget/auth_app_bar.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/constants/image_strings.dart';
@@ -53,7 +54,12 @@ class WelcomeScreen extends StatelessWidget {
                     const SizedBox(height: 10),
                     CreateAccountButton(onPressed: () {}),
                     const SizedBox(height: 5),
-                    HaveAccount(onTap: () {}),
+                    HaveAccount(
+                      onTap: () => HelperFunctions.navigateToScreen(
+                        context: context,
+                        routeName: LoginScreen.routeName,
+                      ),
+                    ),
                   ],
                 ),
               ),

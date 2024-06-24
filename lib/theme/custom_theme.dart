@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'custom_color.dart';
+import 'custom_themes/app_bar_theme.dart';
+import 'custom_themes/elevated_button_theme.dart';
+import 'custom_themes/text_field_theme.dart';
 
 class CustomTheme {
   static ThemeData get theme {
@@ -10,31 +12,10 @@ class CustomTheme {
       scaffoldBackgroundColor: Colors.white,
       primaryColor: CustomColor.primaryColor,
       canvasColor: Colors.transparent,
-      appBarTheme: const AppBarTheme(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
-        iconTheme: IconThemeData(color: Colors.black),
-        systemOverlayStyle: SystemUiOverlayStyle.dark,
-        titleTextStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-      ),
+      appBarTheme: CartAppBarTheme.appBarTheme,
       textTheme: GoogleFonts.poppinsTextTheme(),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: CustomColor.primaryDarkColor,
-          textStyle: const TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            height: 1.0,
-          ),
-          elevation: 0,
-          foregroundColor: Colors.white,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(5)),
-          ),
-          minimumSize: const Size.fromHeight(60),
-        ),
-      ),
+      inputDecorationTheme: TextFieldTheme.inputDecorationTheme,
+      elevatedButtonTheme: AppElevatedButtonTheme.elevatedButtonTheme,
     );
   }
 }

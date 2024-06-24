@@ -1,4 +1,5 @@
 import 'package:big_cart_app/screen/auth/login/login_screen.dart';
+import 'package:big_cart_app/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:big_cart_app/screen/widget/auth_app_bar.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/constants/image_strings.dart';
@@ -7,7 +8,7 @@ import 'package:flutter/material.dart';
 
 import 'widget/create_account_button.dart';
 import 'widget/google_button.dart';
-import 'widget/have_account.dart';
+import '../../widget/have_account_button.dart';
 import 'widget/welcome_info_text.dart';
 import 'widget/welcome_text.dart';
 
@@ -52,9 +53,14 @@ class WelcomeScreen extends StatelessWidget {
                     const SizedBox(height: 25),
                     GoogleButton(onPressed: () {}),
                     const SizedBox(height: 10),
-                    CreateAccountButton(onPressed: () {}),
+                    CreateAccountButton(
+                      onPressed: () => HelperFunctions.navigateToScreen(
+                        context: context,
+                        routeName: SignUpScreen.routeName,
+                      ),
+                    ),
                     const SizedBox(height: 5),
-                    HaveAccount(
+                    HaveAccountButton(
                       onTap: () => HelperFunctions.navigateToScreen(
                         context: context,
                         routeName: LoginScreen.routeName,

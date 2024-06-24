@@ -17,7 +17,9 @@ class ImageStrings {
   static const String onboardingImage32 = "assets/images/onboard/32.png";
   static const String onboardingImage33 = "assets/images/onboard/33.png";
 
+  // Authentication
   static const String authWelcomeImage = "assets/images/auth-welcome.png";
   static const String loginImage = "assets/images/login.png";
+  static const String signUpImage = "assets/images/signup.png";
   static const String google = "assets/images/google.png";
 }

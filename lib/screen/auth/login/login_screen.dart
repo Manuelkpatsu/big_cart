@@ -1,3 +1,4 @@
+import 'package:big_cart_app/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:big_cart_app/screen/widget/app_switch.dart';
 import 'package:big_cart_app/screen/widget/auth_app_bar.dart';
 import 'package:big_cart_app/screen/widget/password_input_field.dart';
@@ -5,6 +6,7 @@ import 'package:big_cart_app/screen/widget/text_input_field.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/constants/image_strings.dart';
 import 'package:big_cart_app/utils/constants/text_strings.dart';
+import 'package:big_cart_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 import 'widget/forgot_password_button.dart';
@@ -30,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AccountAppBar(onPressed: () {}),
+      appBar: AccountAppBar(onPressed: () => HelperFunctions.popScreen(context)),
       extendBodyBehindAppBar: true,
       resizeToAvoidBottomInset: true,
       body: SizedBox(
@@ -96,7 +98,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 10),
                       LoginButton(onPressed: () {}),
                       const SizedBox(height: 5),
-                      NoAccountButton(onTap: () {}),
+                      NoAccountButton(
+                        onTap: () => HelperFunctions.navigateToScreen(
+                          context: context,
+                          routeName: SignUpScreen.routeName,
+                        ),
+                      ),
                       const SizedBox(height: 10),
                     ],
                   ),

@@ -20,17 +20,20 @@ class TextStrings {
   static const String next = "Next";
   static const String createAccount = "Create an account";
   static const String google = "Continue with google";
+  static const String forgotPassword = "Forgot password";
+  static const String login = "Login";
+  static const String signUp = "Sign up";
 
+  // Authentication
   static const String welcome = "Welcome";
   static const String welcomeBack = "Welcome back!";
   static const String loginSubTitle = "Sign in to your account";
-  static const String login = "Login";
   static const String haveAccount = "Already have an account?";
   static const String noAccount = "Don't have an account?";
-  static const String signUp = "Sign up";
   static const String emailAddress = "Email address";
   static const String phoneNumber = "Phone number";
   static const String password = "Password";
   static const String rememberMe = "Remember me";
-  static const String forgotPassword = "Forgot password";
+  static const String signUpTitle = "Create account";
+  static const String signUpSubTitle = "Quickly create account";
 }

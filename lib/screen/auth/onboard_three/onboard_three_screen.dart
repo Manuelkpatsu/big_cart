@@ -5,7 +5,7 @@ import 'package:big_cart_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import 'widget/next_button.dart';
+import 'widget/next_text_button.dart';
 import 'widget/onboard_three_page.dart';
 import 'widget/skip_button.dart';
 
@@ -104,7 +104,7 @@ class _OnboardThreeScreenState extends State<OnboardThreeScreen> {
                   ),
                   onDotClicked: _onDotClicked,
                 ),
-                NextButton(onPressed: _onNextPressed),
+                NextTextButton(onPressed: _onNextPressed),
               ],
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:big_cart_app/screen/auth/login/login_screen.dart';
+import 'package:big_cart_app/screen/auth/phone_number/phone_number_screen.dart';
 import 'package:big_cart_app/screen/widget/auth_widget.dart';
 import 'package:big_cart_app/screen/widget/have_account_button.dart';
 import 'package:big_cart_app/screen/widget/auth_app_bar.dart';
@@ -79,7 +80,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       },
                     ),
                     const SizedBox(height: 10),
-                    SignUpButton(onPressed: () {}),
+                    SignUpButton(
+                      onPressed: () => HelperFunctions.navigateToScreen(
+                        context: context,
+                        routeName: PhoneNumberScreen.routeName,
+                      ),
+                    ),
                     const SizedBox(height: 5),
                     HaveAccountButton(
                       onTap: () => HelperFunctions.navigateToScreen(

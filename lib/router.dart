@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'screen/auth/forgot_password/forgot_password_screen.dart';
 import 'screen/auth/login/login_screen.dart';
 import 'screen/auth/onboard/onboard_screen.dart';
+import 'screen/auth/phone_number/phone_number_screen.dart';
 import 'screen/auth/sign_up/sign_up_screen.dart';
 import 'screen/auth/welcome/welcome_screen.dart';
 
@@ -21,6 +22,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
       case ForgotPasswordScreen.routeName:
         return MaterialPageRoute(builder: (_) => const ForgotPasswordScreen());
+      case PhoneNumberScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const PhoneNumberScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

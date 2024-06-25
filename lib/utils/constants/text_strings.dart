@@ -41,4 +41,8 @@ class TextStrings {
   static const String forgotPasswordSubTitle =
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy";
   static const String forgotPasswordAppBarTitle = "Password Recovery";
+  static const String verifyNumber = "Verify your number";
+  static const String verifyNumberAppBarTitle = "Verify Number";
+  static const String phoneNumberSubTitle =
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy";
 }

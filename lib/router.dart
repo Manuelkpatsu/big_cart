@@ -5,6 +5,7 @@ import 'screen/auth/login/login_screen.dart';
 import 'screen/auth/onboard/onboard_screen.dart';
 import 'screen/auth/phone_number/phone_number_screen.dart';
 import 'screen/auth/sign_up/sign_up_screen.dart';
+import 'screen/auth/verify_otp/verify_otp_screen.dart';
 import 'screen/auth/welcome/welcome_screen.dart';
 
 class AppRouter {
@@ -24,6 +25,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ForgotPasswordScreen());
       case PhoneNumberScreen.routeName:
         return MaterialPageRoute(builder: (_) => const PhoneNumberScreen());
+      case VerifyOtpScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const VerifyOtpScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

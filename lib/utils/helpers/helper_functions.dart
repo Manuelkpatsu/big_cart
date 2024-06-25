@@ -7,6 +7,13 @@ class HelperFunctions {
     Navigator.of(context).pushNamed(routeName);
   }
 
+  static void navigateAndRemoveUntil({
+    required BuildContext context,
+    required String routeName,
+  }) {
+    Navigator.of(context).pushNamedAndRemoveUntil(routeName, (Route<dynamic> route) => false);
+  }
+
   static void popScreen(BuildContext context) {
     Navigator.of(context).maybePop();
   }

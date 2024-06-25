@@ -24,6 +24,7 @@ class TextStrings {
   static const String login = "Login";
   static const String signUp = "Sign up";
   static const String sendLink = "Send link";
+  static const String resendCode = "Resend a new code";
 
   // Authentication
   static const String welcome = "Welcome";
@@ -45,4 +46,6 @@ class TextStrings {
   static const String verifyNumberAppBarTitle = "Verify Number";
   static const String phoneNumberSubTitle =
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy";
+  static const String verifyOtpSubTitle = "Enter your OTP code below";
+  static const String didNotReceiveCode = "Didn't receive the code?";
 }

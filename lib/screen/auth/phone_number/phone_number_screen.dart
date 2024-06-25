@@ -1,8 +1,9 @@
-import 'package:big_cart_app/screen/widget/back_icon_button.dart';
+import 'package:big_cart_app/screen/auth/verify_otp/verify_otp_screen.dart';
 import 'package:big_cart_app/screen/widget/next_button.dart';
 import 'package:big_cart_app/screen/widget/verify_number_text.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/constants/text_strings.dart';
+import 'package:big_cart_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
@@ -26,7 +27,7 @@ class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: CustomColor.backgroundColor,
-        leading: BackIconButton(onPressed: () {}),
+        automaticallyImplyLeading: false,
         title: const Text(TextStrings.verifyNumberAppBarTitle),
       ),
       body: SingleChildScrollView(
@@ -51,7 +52,12 @@ class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
                 ),
               ),
               const SizedBox(height: 10),
-              NextButton(onPressed: () {}),
+              NextButton(
+                onPressed: () => HelperFunctions.navigateToScreen(
+                  context: context,
+                  routeName: VerifyOtpScreen.routeName,
+                ),
+              ),
             ],
           ),
         ),

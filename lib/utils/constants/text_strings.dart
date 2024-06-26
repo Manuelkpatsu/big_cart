@@ -48,4 +48,10 @@ class TextStrings {
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy";
   static const String verifyOtpSubTitle = "Enter your OTP code below";
   static const String didNotReceiveCode = "Didn't receive the code?";
+
+  // Bottom Navigation Bar
+  static const String home = "Home";
+  static const String account = "Account";
+  static const String favorites = "Favorites";
+  static const String cart = "Cart";
 }

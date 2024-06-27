@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screen/app/app.dart';
+import 'screen/app/home/home_screen.dart';
 import 'screen/auth/forgot_password/forgot_password_screen.dart';
 import 'screen/auth/login/login_screen.dart';
 import 'screen/auth/onboard/onboard_screen.dart';
@@ -30,6 +31,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const VerifyOtpScreen());
       case App.routeName:
         return MaterialPageRoute(builder: (_) => const App());
+      case HomeScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

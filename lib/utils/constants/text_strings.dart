@@ -54,4 +54,32 @@ class TextStrings {
   static const String account = "Account";
   static const String favorites = "Favorites";
   static const String cart = "Cart";
+
+  // Main App
+  static const String searchKeywords = "Search keywords...";
+  static const String categories = "Categories";
+  static const String featuredProducts = "Featured Products";
+  static const String addToCart = "Add to cart";
+  static const String newText = "New";
+  static const String quantity = "Quantity";
+  static const String reviews = "Reviews";
+  static const String more = "more";
+  static const String productDescription =
+      "Organic Mountain works as a seller for many organic growers of organic lemons. Organic lemons are easy to spot in your produce aisle. They are just like regular lemons, but they will usually have a few more scars on the outside of the lemon skin. Organic lemons are considered to be the world's finest lemon for juicing";
+
+  // Categories
+  static const String vegetables = "Vegetables";
+  static const String fruits = "Fruits";
+  static const String beverages = "Beverages";
+  static const String grocery = "Grocery";
+  static const String edibleOil = "Edible oil";
+  static const String household = "Household";
+  static const String babyCare = "Baby care";
+
+  // Products
+  static const String avocado = "Avocado";
+  static const String broccoli = "Fresh Broccoli";
+  static const String pineapple = "Pineapple";
+  static const String freshPeach = "Fresh Peach";
+  static const String blackGrapes = "Black Grapes";
 }

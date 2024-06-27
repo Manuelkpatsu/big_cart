@@ -19,4 +19,15 @@ class CustomColor {
     stops: [0.01, 1.0],
     colors: [primaryColor, primaryDarkColor],
   );
+  static const Color vegetablesColor = Color(0xffe6f2ea);
+  static const Color groceryColor = Color(0xfff3effa);
+  static const Color fruitsColor = Color(0xffffe9e5);
+  static const Color edibleOilColor = Color(0xffdcf4f5);
+  static const Color beveragesColor = Color(0xfffff6e3);
+  static const Color householdColor = Color(0xffffe8f2);
+  static const Color babyCareColor = Color(0xffd2efff);
+  static const Color newProductTextColor = Color(0xffe8ad41);
+  static const Color newProductBackgroundColor = Color(0xfffdefd5);
+  static const Color discountTextColor = Color(0xfff56262);
+  static const Color discountBackgroundColor = Color(0xfffee4e4);
 }

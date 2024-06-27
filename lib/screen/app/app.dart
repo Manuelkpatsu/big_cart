@@ -36,7 +36,6 @@ class _AppState extends State<App> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(automaticallyImplyLeading: false),
       body: IndexedStack(
         index: _motionTabBarController.index,
         children: AppData.screens,

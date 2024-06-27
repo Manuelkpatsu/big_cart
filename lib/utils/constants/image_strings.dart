@@ -22,4 +22,23 @@ class ImageStrings {
   static const String loginImage = "assets/images/login.png";
   static const String signUpImage = "assets/images/signup.png";
   static const String google = "assets/images/google.png";
+
+  // Categories
+  static const String babyCareImage = "assets/images/categories/baby_care.png";
+  static const String beveragesImage = "assets/images/categories/beverages.png";
+  static const String edibleOilImage = "assets/images/categories/edible_oil.png";
+  static const String fruitsImage = "assets/images/categories/fruits.png";
+  static const String groceryImage = "assets/images/categories/grocery.png";
+  static const String householdImage = "assets/images/categories/household.png";
+  static const String vegetablesImage = "assets/images/categories/vegetables.png";
+
+  // Products
+  static const String avocadoImage = "assets/images/products/avocado.png";
+  static const String broccoliImage = "assets/images/products/broccoli.png";
+  static const String pineappleImage = "assets/images/products/pineapple.png";
+  static const String freshPeachImage = "assets/images/products/fresh_peach.png";
+  static const String blackGrapesImage = "assets/images/products/black_grapes.png";
+
+  // Banner
+  static const String banner = "assets/images/banner.png";
 }

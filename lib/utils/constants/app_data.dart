@@ -13,21 +13,21 @@ class AppData {
   // Bottom Navigation Bar
   static const List<String> bottomNavBarLabels = [
     TextStrings.home,
-    TextStrings.account,
+    TextStrings.store,
     TextStrings.favorites,
-    TextStrings.cart,
+    TextStrings.account,
   ];
   static const List<Widget> screens = [
     HomeScreen(),
-    Center(child: Text(TextStrings.account)),
+    Center(child: Text(TextStrings.store)),
     Center(child: Text(TextStrings.favorites)),
-    Center(child: Text(TextStrings.cart)),
+    Center(child: Text(TextStrings.account)),
   ];
   static const List<IconData> bottomNavBarIcons = [
     Icons.home_outlined,
-    Icons.account_circle_outlined,
-    Icons.favorite_border_outlined,
     Icons.shopping_bag_outlined,
+    Icons.favorite_border_outlined,
+    Icons.account_circle_outlined,
   ];
 
   // Categories

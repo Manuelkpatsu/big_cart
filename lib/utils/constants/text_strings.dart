@@ -53,7 +53,7 @@ class TextStrings {
   static const String home = "Home";
   static const String account = "Account";
   static const String favorites = "Favorites";
-  static const String cart = "Cart";
+  static const String store = "Store";
 
   // Main App
   static const String searchKeywords = "Search keywords...";

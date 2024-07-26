@@ -30,4 +30,5 @@ class CustomColor {
   static const Color newProductBackgroundColor = Color(0xfffdefd5);
   static const Color discountTextColor = Color(0xfff56262);
   static const Color discountBackgroundColor = Color(0xfffee4e4);
+  static const Color greenColor = Color(0xff28B446);
 }

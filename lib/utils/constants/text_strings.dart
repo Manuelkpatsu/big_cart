@@ -82,4 +82,14 @@ class TextStrings {
   static const String pineapple = "Pineapple";
   static const String freshPeach = "Fresh Peach";
   static const String blackGrapes = "Black Grapes";
+
+  // Account
+  static const String aboutMe = "About Me";
+  static const String myAddress = "My Address";
+  static const String creditCards = "Credit Cards";
+  static const String myFavorites = "My Favorites";
+  static const String myOrders = "My Orders";
+  static const String notifications = "Notifications";
+  static const String signOut = "Sign Out";
+  static const String transactions = "Transactions";
 }

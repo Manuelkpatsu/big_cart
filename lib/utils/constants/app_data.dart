@@ -1,5 +1,6 @@
 import 'package:big_cart_app/model/category.dart';
 import 'package:big_cart_app/model/product.dart';
+import 'package:big_cart_app/screen/app/account/account_screen.dart';
 import 'package:big_cart_app/screen/app/home/home_screen.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/constants/text_strings.dart';
@@ -21,7 +22,7 @@ class AppData {
     HomeScreen(),
     Center(child: Text(TextStrings.store)),
     Center(child: Text(TextStrings.favorites)),
-    Center(child: Text(TextStrings.account)),
+    AccountScreen(),
   ];
   static const List<IconData> bottomNavBarIcons = [
     Icons.home_outlined,

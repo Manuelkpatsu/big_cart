@@ -8,7 +8,7 @@ class TextInputField extends StatelessWidget {
   final TextInputAction? inputAction;
   final FormFieldValidator<String>? validator;
   final TextCapitalization textCapitalization;
-  final String labelText;
+  final String hintText;
   final Widget? suffixIcon;
   final Widget? prefixIcon;
   final void Function(String)? onChanged;
@@ -31,7 +31,7 @@ class TextInputField extends StatelessWidget {
     this.inputType,
     this.inputAction,
     this.validator,
-    required this.labelText,
+    required this.hintText,
     this.suffixIcon,
     this.prefixIcon,
     this.textCapitalization = TextCapitalization.none,
@@ -58,9 +58,10 @@ class TextInputField extends StatelessWidget {
       cursorColor: Colors.black,
       onChanged: onChanged,
       style: const TextStyle(
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: FontWeight.w500,
         color: Colors.black,
+        letterSpacing: 0.03,
       ),
       inputFormatters: inputFormatters,
       autofillHints: autofillHints,
@@ -71,7 +72,7 @@ class TextInputField extends StatelessWidget {
       onFieldSubmitted: onFieldSubmitted,
       decoration: const InputDecoration().copyWith(
         contentPadding: contentPadding,
-        label: Text(labelText),
+        hintText: hintText,
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
         fillColor: fillColor,

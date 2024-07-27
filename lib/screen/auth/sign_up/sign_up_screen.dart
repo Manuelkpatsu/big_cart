@@ -57,14 +57,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SignUpSubTitleText(),
                     const SizedBox(height: 25),
                     const TextInputField(
-                      labelText: TextStrings.emailAddress,
+                      hintText: TextStrings.emailAddress,
                       inputType: TextInputType.emailAddress,
                       inputAction: TextInputAction.next,
                       prefixIcon: Icon(Icons.email_outlined),
                     ),
                     const SizedBox(height: 5),
                     const TextInputField(
-                      labelText: TextStrings.phoneNumber,
+                      hintText: TextStrings.phoneNumber,
                       inputType: TextInputType.phone,
                       inputAction: TextInputAction.next,
                       prefixIcon: Icon(Icons.phone),
@@ -72,7 +72,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SizedBox(height: 5),
                     PasswordInputField(
                       prefixIcon: const Icon(Icons.lock_outline_rounded),
-                      labelText: TextStrings.password,
+                      hintText: TextStrings.password,
                       inputAction: TextInputAction.done,
                       obscureText: _obscureSignUpPasswordText,
                       toggle: () {

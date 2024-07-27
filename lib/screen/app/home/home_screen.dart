@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
         toolbarHeight: 60,
         title: TextInputField(
           contentPadding: const EdgeInsets.symmetric(vertical: 5),
-          labelText: TextStrings.searchKeywords,
+          hintText: TextStrings.searchKeywords,
           fillColor: CustomColor.backgroundColor,
           prefixIcon: const Icon(CupertinoIcons.search),
           suffixIcon: IconButton(

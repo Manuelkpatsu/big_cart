@@ -99,4 +99,10 @@ class TextStrings {
   static const String generalNotifications = "General Notifications";
   static const String notificationsSubTitle =
       "Lorem ipsum dolor sit amet consetetur sadi pscing elitr sed diam nonumym";
+  static const String personalDetails = "Personal Details";
+  static const String changePassword = "Change Password";
+  static const String fullName = "Full name";
+  static const String currentPassword = "Current password";
+  static const String newPassword = "New password";
+  static const String confirmNewPassword = "Confirm new password";
 }

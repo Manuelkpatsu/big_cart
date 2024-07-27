@@ -7,7 +7,7 @@ class PasswordInputField extends StatelessWidget {
   final TextInputAction? inputAction;
   final FormFieldValidator<String>? validator;
   final TextCapitalization textCapitalization;
-  final String labelText;
+  final String hintText;
   final bool obscureText;
   final VoidCallback? toggle;
   final void Function(String)? onChanged;
@@ -23,7 +23,7 @@ class PasswordInputField extends StatelessWidget {
     this.inputType,
     this.inputAction,
     this.validator,
-    required this.labelText,
+    required this.hintText,
     this.obscureText = true,
     this.toggle,
     this.textCapitalization = TextCapitalization.none,
@@ -42,19 +42,20 @@ class PasswordInputField extends StatelessWidget {
       onChanged: onChanged,
       cursorColor: Colors.black,
       style: const TextStyle(
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: FontWeight.w500,
         color: Colors.black,
+        letterSpacing: 0.03,
       ),
       decoration: const InputDecoration().copyWith(
         contentPadding: contentPadding,
-        label: Text(labelText),
         suffixIcon: IconButton(
           icon: obscureText ? const Icon(Icons.visibility_off) : const Icon(Icons.visibility),
           onPressed: toggle,
         ),
         prefixIcon: prefixIcon,
         fillColor: fillColor,
+        hintText: hintText,
       ),
       keyboardType: inputType,
       textInputAction: inputAction,

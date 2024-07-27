@@ -1,3 +1,4 @@
+import 'package:big_cart_app/screen/widget/title_text.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:flutter/material.dart';
 
@@ -16,14 +17,7 @@ class NavTile extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              title,
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
+            TitleText(title: title),
             const Icon(Icons.chevron_right, color: CustomColor.grayTextColor),
           ],
         ),

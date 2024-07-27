@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const LoginSubTitleText(),
                     const SizedBox(height: 25),
                     const TextInputField(
-                      labelText: TextStrings.emailAddress,
+                      hintText: TextStrings.emailAddress,
                       inputType: TextInputType.emailAddress,
                       inputAction: TextInputAction.next,
                       prefixIcon: Icon(Icons.email_outlined),
@@ -69,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(height: 5),
                     PasswordInputField(
                       prefixIcon: const Icon(Icons.lock_outline_rounded),
-                      labelText: TextStrings.password,
+                      hintText: TextStrings.password,
                       inputAction: TextInputAction.done,
                       obscureText: _obscureLoginPasswordText,
                       toggle: () {

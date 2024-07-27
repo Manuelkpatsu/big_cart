@@ -4,6 +4,7 @@ import 'package:big_cart_app/utils/constants/text_strings.dart';
 import 'package:big_cart_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
+import 'about_me/about_me_screen.dart';
 import 'notifications_settings/notifications_settings_screen.dart';
 import 'widget/account_nav_tile.dart';
 import 'widget/profile_avatar.dart';
@@ -61,7 +62,10 @@ class AccountScreen extends StatelessWidget {
                 AccountNavTile(
                   image: ImageStrings.aboutMe,
                   title: TextStrings.aboutMe,
-                  onPressed: () {},
+                  onPressed: () => HelperFunctions.navigateToScreen(
+                    context: context,
+                    routeName: AboutMeScreen.routeName,
+                  ),
                   trailing: const Icon(Icons.chevron_right, color: CustomColor.grayTextColor),
                 ),
                 AccountNavTile(

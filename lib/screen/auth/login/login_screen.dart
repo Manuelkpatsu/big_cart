@@ -81,6 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         AppSwitch(
                           value: _isChecked,
+                          alignment: Alignment.center,
                           onChanged: (value) {
                             setState(() => _isChecked = value);
                           },

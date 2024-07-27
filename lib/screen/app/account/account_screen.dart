@@ -1,8 +1,10 @@
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/constants/image_strings.dart';
 import 'package:big_cart_app/utils/constants/text_strings.dart';
+import 'package:big_cart_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
+import 'notifications_settings/notifications_settings_screen.dart';
 import 'widget/account_nav_tile.dart';
 import 'widget/profile_avatar.dart';
 import 'widget/profile_email_text.dart';
@@ -10,6 +12,8 @@ import 'widget/profile_name_text.dart';
 import 'widget/update_image_button.dart';
 
 class AccountScreen extends StatelessWidget {
+  static const routeName = '/account';
+
   const AccountScreen({super.key});
 
   @override
@@ -93,7 +97,10 @@ class AccountScreen extends StatelessWidget {
                 AccountNavTile(
                   image: ImageStrings.notifications,
                   title: TextStrings.notifications,
-                  onPressed: () {},
+                  onPressed: () => HelperFunctions.navigateToScreen(
+                    context: context,
+                    routeName: NotificationsSettingsScreen.routeName,
+                  ),
                   trailing: const Icon(Icons.chevron_right, color: CustomColor.grayTextColor),
                 ),
                 AccountNavTile(

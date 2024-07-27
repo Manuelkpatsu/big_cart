@@ -83,7 +83,7 @@ class TextStrings {
   static const String freshPeach = "Fresh Peach";
   static const String blackGrapes = "Black Grapes";
 
-  // Account
+  // Account Settings
   static const String aboutMe = "About Me";
   static const String myAddress = "My Address";
   static const String creditCards = "Credit Cards";
@@ -92,4 +92,11 @@ class TextStrings {
   static const String notifications = "Notifications";
   static const String signOut = "Sign Out";
   static const String transactions = "Transactions";
+  static const String saveSettings = "Save settings";
+  static const String allowNotifications = "Allow Notifications";
+  static const String emailNotifications = "Email Notifications";
+  static const String orderNotifications = "Order Notifications";
+  static const String generalNotifications = "General Notifications";
+  static const String notificationsSubTitle =
+      "Lorem ipsum dolor sit amet consetetur sadi pscing elitr sed diam nonumym";
 }

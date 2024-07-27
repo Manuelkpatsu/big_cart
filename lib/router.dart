@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screen/app/account/account_screen.dart';
+import 'screen/app/account/notifications_settings/notifications_settings_screen.dart';
 import 'screen/app/app.dart';
 import 'screen/app/home/home_screen.dart';
 import 'screen/auth/forgot_password/forgot_password_screen.dart';
@@ -33,6 +35,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const App());
       case HomeScreen.routeName:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case AccountScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const AccountScreen());
+      case NotificationsSettingsScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const NotificationsSettingsScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

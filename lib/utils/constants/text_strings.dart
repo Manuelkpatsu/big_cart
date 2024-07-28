@@ -105,4 +105,9 @@ class TextStrings {
   static const String currentPassword = "Current password";
   static const String newPassword = "New password";
   static const String confirmNewPassword = "Confirm new password";
+
+  // Payment Types
+  static const String masterCard = "Master Card";
+  static const String paypal = "Paypal";
+  static const String visa = "Visa";
 }

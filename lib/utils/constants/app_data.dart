@@ -1,5 +1,7 @@
 import 'package:big_cart_app/model/category.dart';
+import 'package:big_cart_app/model/payment_type.dart';
 import 'package:big_cart_app/model/product.dart';
+import 'package:big_cart_app/model/transaction.dart';
 import 'package:big_cart_app/screen/app/account/account_screen.dart';
 import 'package:big_cart_app/screen/app/home/home_screen.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
@@ -185,4 +187,67 @@ class AppData {
       cartQuantity: 1,
     ),
   ];
+
+  static List<Transaction> transactions = [
+    Transaction(
+      id: 1,
+      paymentType: const PaymentType(
+        id: 1,
+        name: TextStrings.masterCard,
+        imagePath: ImageStrings.masterCard,
+      ),
+      transactionDate: DateTime(2024, 07, 28, 11, 57),
+      amount: 89.00,
+    ),
+    Transaction(
+      id: 2,
+      paymentType: const PaymentType(
+        id: 2,
+        name: TextStrings.visa,
+        imagePath: ImageStrings.visa,
+      ),
+      transactionDate: DateTime(2024, 07, 28, 11, 57),
+      amount: 109.00,
+    ),
+    Transaction(
+      id: 3,
+      paymentType: const PaymentType(
+        id: 3,
+        name: TextStrings.paypal,
+        imagePath: ImageStrings.paypal,
+      ),
+      transactionDate: DateTime(2024, 07, 28, 11, 57),
+      amount: 567.00,
+    ),
+    Transaction(
+      id: 4,
+      paymentType: const PaymentType(
+        id: 3,
+        name: TextStrings.paypal,
+        imagePath: ImageStrings.paypal,
+      ),
+      transactionDate: DateTime(2024, 07, 28, 11, 57),
+      amount: 567.00,
+    ),
+    Transaction(
+      id: 5,
+      paymentType: const PaymentType(
+        id: 2,
+        name: TextStrings.visa,
+        imagePath: ImageStrings.visa,
+      ),
+      transactionDate: DateTime(2024, 07, 28, 20, 15),
+      amount: 109.00,
+    ),
+    Transaction(
+      id: 6,
+      paymentType: const PaymentType(
+        id: 1,
+        name: TextStrings.masterCard,
+        imagePath: ImageStrings.masterCard,
+      ),
+      transactionDate: DateTime(2024, 07, 25, 15, 26),
+      amount: 89.00,
+    ),
+  ]..sort((a, b) => b.transactionDate.compareTo(a.transactionDate));
 }

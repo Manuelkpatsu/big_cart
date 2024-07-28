@@ -31,4 +31,5 @@ class CustomColor {
   static const Color discountTextColor = Color(0xfff56262);
   static const Color discountBackgroundColor = Color(0xfffee4e4);
   static const Color greenColor = Color(0xff28B446);
+  static const Color paymentTypeColor = Color(0xfff5f5f5);
 }

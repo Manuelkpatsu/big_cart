@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'about_me/about_me_screen.dart';
 import 'notifications_settings/notifications_settings_screen.dart';
+import 'transactions/transactions_screen.dart';
 import 'widget/account_nav_tile.dart';
 import 'widget/profile_avatar.dart';
 import 'widget/profile_email_text.dart';
@@ -95,7 +96,10 @@ class AccountScreen extends StatelessWidget {
                 AccountNavTile(
                   image: ImageStrings.transactions,
                   title: TextStrings.transactions,
-                  onPressed: () {},
+                  onPressed: () => HelperFunctions.navigateToScreen(
+                    context: context,
+                    routeName: TransactionsScreen.routeName,
+                  ),
                   trailing: const Icon(Icons.chevron_right, color: CustomColor.grayTextColor),
                 ),
                 AccountNavTile(

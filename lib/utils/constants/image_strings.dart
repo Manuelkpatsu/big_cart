@@ -52,4 +52,9 @@ class ImageStrings {
   static const String notifications = "assets/images/account/notifications.png";
   static const String signOut = "assets/images/account/sign_out.png";
   static const String transactions = "assets/images/account/transactions.png";
+
+  // Payment Types
+  static const String masterCard = "assets/images/payment_types/master_card.png";
+  static const String paypal = "assets/images/payment_types/paypal.png";
+  static const String visa = "assets/images/payment_types/visa.png";
 }

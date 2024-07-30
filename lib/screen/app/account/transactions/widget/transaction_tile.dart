@@ -1,5 +1,5 @@
 import 'package:big_cart_app/model/transaction.dart';
-import 'package:big_cart_app/screen/widget/payment_type_image.dart';
+import 'package:big_cart_app/screen/widget/circular_image.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
 import 'package:big_cart_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class TransactionTile extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Row(
           children: [
-            PaymentTypeImage(image: transaction.paymentType.imagePath),
+            CircularImage(image: transaction.paymentType.imagePath),
             const SizedBox(width: 10),
             Expanded(
               child: Column(

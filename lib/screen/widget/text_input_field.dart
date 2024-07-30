@@ -23,6 +23,8 @@ class TextInputField extends StatelessWidget {
   final bool readOnly;
   final void Function(String)? onFieldSubmitted;
   final Color? fillColor;
+  final TextStyle style;
+  final bool? isDense;
 
   const TextInputField({
     super.key,
@@ -47,6 +49,13 @@ class TextInputField extends StatelessWidget {
     this.readOnly = false,
     this.onFieldSubmitted,
     this.fillColor = Colors.white,
+    this.style = const TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      letterSpacing: 0.03,
+    ),
+    this.isDense,
   });
 
   @override
@@ -57,12 +66,7 @@ class TextInputField extends StatelessWidget {
       initialValue: initialValue,
       cursorColor: Colors.black,
       onChanged: onChanged,
-      style: const TextStyle(
-        fontSize: 15,
-        fontWeight: FontWeight.w500,
-        color: Colors.black,
-        letterSpacing: 0.03,
-      ),
+      style: style,
       inputFormatters: inputFormatters,
       autofillHints: autofillHints,
       onTap: onTap,
@@ -71,6 +75,7 @@ class TextInputField extends StatelessWidget {
       readOnly: readOnly,
       onFieldSubmitted: onFieldSubmitted,
       decoration: const InputDecoration().copyWith(
+        isDense: isDense,
         contentPadding: contentPadding,
         hintText: hintText,
         suffixIcon: suffixIcon,

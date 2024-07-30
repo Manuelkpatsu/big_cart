@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screen/app/account/about_me/about_me_screen.dart';
 import 'screen/app/account/account_screen.dart';
+import 'screen/app/account/my_address/my_address_screen.dart';
 import 'screen/app/account/notifications_settings/notifications_settings_screen.dart';
 import 'screen/app/account/transactions/transactions_screen.dart';
 import 'screen/app/app.dart';
@@ -45,6 +46,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const AboutMeScreen());
       case TransactionsScreen.routeName:
         return MaterialPageRoute(builder: (_) => const TransactionsScreen());
+      case MyAddressScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const MyAddressScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

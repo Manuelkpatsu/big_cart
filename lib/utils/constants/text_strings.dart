@@ -110,4 +110,13 @@ class TextStrings {
   static const String masterCard = "Master Card";
   static const String paypal = "Paypal";
   static const String visa = "Visa";
+
+  // Address
+  static const String address = "Address";
+  static const String name = "Name";
+  static const String city = "City";
+  static const String zipCode = "Zip code";
+  static const String country = "Country";
+  static const String makeDefault = "Make default";
+  static const String defaultText = "Default";
 }

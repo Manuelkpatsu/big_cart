@@ -15,6 +15,8 @@ class PasswordInputField extends StatelessWidget {
   final Widget? suffixIcon;
   final Widget? prefixIcon;
   final Color? fillColor;
+  final TextStyle style;
+  final bool? isDense;
 
   const PasswordInputField({
     super.key,
@@ -32,6 +34,13 @@ class PasswordInputField extends StatelessWidget {
     this.suffixIcon,
     this.prefixIcon,
     this.fillColor = Colors.white,
+    this.style = const TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      letterSpacing: 0.03,
+    ),
+    this.isDense,
   });
 
   @override
@@ -41,13 +50,9 @@ class PasswordInputField extends StatelessWidget {
       initialValue: initialValue,
       onChanged: onChanged,
       cursorColor: Colors.black,
-      style: const TextStyle(
-        fontSize: 15,
-        fontWeight: FontWeight.w500,
-        color: Colors.black,
-        letterSpacing: 0.03,
-      ),
+      style: style,
       decoration: const InputDecoration().copyWith(
+        isDense: isDense,
         contentPadding: contentPadding,
         suffixIcon: IconButton(
           icon: obscureText ? const Icon(Icons.visibility_off) : const Icon(Icons.visibility),

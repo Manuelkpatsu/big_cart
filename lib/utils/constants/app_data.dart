@@ -1,3 +1,4 @@
+import 'package:big_cart_app/model/address.dart';
 import 'package:big_cart_app/model/category.dart';
 import 'package:big_cart_app/model/payment_type.dart';
 import 'package:big_cart_app/model/product.dart';
@@ -250,4 +251,34 @@ class AppData {
       amount: 89.00,
     ),
   ]..sort((a, b) => b.transactionDate.compareTo(a.transactionDate));
+
+  static const List<Address> addresses = [
+    Address(
+      id: 1,
+      name: 'Russell',
+      streetAddress: '2811 Crescent Day LA Port',
+      city: 'California',
+      zipCode: '77571',
+      phoneNumber: '+1 202 555 0142',
+      country: 'GH',
+    ),
+    Address(
+      id: 2,
+      name: 'Russell',
+      streetAddress: '2811 Crescent Day LA Port',
+      city: 'California',
+      zipCode: '77571',
+      phoneNumber: '+1 202 555 0142',
+      country: 'NG',
+    ),
+    Address(
+      id: 3,
+      name: 'Russell',
+      streetAddress: '2811 Crescent Day LA Port',
+      city: 'California',
+      zipCode: '77571',
+      phoneNumber: '+1 202 555 0142',
+      country: 'US',
+    ),
+  ];
 }

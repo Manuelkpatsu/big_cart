@@ -119,4 +119,6 @@ class TextStrings {
   static const String country = "Country";
   static const String makeDefault = "Make default";
   static const String defaultText = "Default";
+  static const String addAddress = "Add Address";
+  static const String addAddressButton = "Add address";
 }

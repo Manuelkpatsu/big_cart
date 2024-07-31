@@ -143,7 +143,7 @@ class _MyAddressTileState extends State<MyAddressTile> {
                     child: TextInputField(
                       controller: zipCodeController,
                       hintText: TextStrings.zipCode,
-                      prefixIcon: const Icon(Icons.qr_code, size: 18),
+                      prefixIcon: const Icon(Icons.subtitles_outlined, size: 18),
                       fillColor: CustomColor.backgroundColor,
                       style: style,
                     ),

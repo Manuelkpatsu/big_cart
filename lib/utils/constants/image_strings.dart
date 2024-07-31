@@ -57,4 +57,8 @@ class ImageStrings {
   static const String masterCard = "assets/images/payment_types/master_card.png";
   static const String paypal = "assets/images/payment_types/paypal.png";
   static const String visa = "assets/images/payment_types/visa.png";
+
+  // Address
+  static const String arrowDown = "assets/images/arrow_down.png";
+  static const String arrowUp = "assets/images/arrow_up.png";
 }

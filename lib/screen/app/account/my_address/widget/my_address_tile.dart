@@ -1,4 +1,7 @@
 import 'package:big_cart_app/model/address.dart';
+import 'package:big_cart_app/screen/app/account/widget/animated_arrow_icon.dart';
+import 'package:big_cart_app/screen/app/account/widget/default_text.dart';
+import 'package:big_cart_app/screen/app/account/widget/make_default.dart';
 import 'package:big_cart_app/screen/widget/circular_image.dart';
 import 'package:big_cart_app/screen/widget/text_input_field.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
@@ -9,20 +12,23 @@ import 'package:flutter/material.dart';
 import 'address_name_text.dart';
 import 'address_phone_number_text.dart';
 import 'complete_address_text.dart';
-import 'default_address.dart';
 
 class MyAddressTile extends StatefulWidget {
   final Address address;
   final bool isDefault;
   final int defaultAddress;
+  final bool initiallyExpanded;
   final void Function(int?)? onDefaultAddressChanged;
+  final void Function(bool)? onExpansionChanged;
 
   const MyAddressTile({
     super.key,
     required this.address,
     required this.isDefault,
     required this.defaultAddress,
+    required this.initiallyExpanded,
     required this.onDefaultAddressChanged,
+    required this.onExpansionChanged,
   });
 
   @override
@@ -76,7 +82,7 @@ class _MyAddressTileState extends State<MyAddressTile> {
           backgroundColor: Colors.white,
           collapsedBackgroundColor: Colors.white,
           shape: const Border(),
-          initiallyExpanded: widget.isDefault,
+          initiallyExpanded: widget.initiallyExpanded,
           leading: const CircularImage(
             circleSize: 66,
             imageWidth: 24,
@@ -92,13 +98,8 @@ class _MyAddressTileState extends State<MyAddressTile> {
               AddressPhoneNumberText(phoneNumber: widget.address.phoneNumber),
             ],
           ),
-          trailing: Image.asset(
-            'assets/images/trailing-icon.png',
-            width: 18,
-            height: 18,
-            fit: BoxFit.cover,
-          ),
-          onExpansionChanged: null,
+          trailing: AnimatedArrowIcon(initiallyExpanded: widget.initiallyExpanded),
+          onExpansionChanged: widget.onExpansionChanged,
           children: [
             const Divider(height: 0, color: CustomColor.borderColor),
             const SizedBox(height: 20),
@@ -188,35 +189,20 @@ class _MyAddressTileState extends State<MyAddressTile> {
             const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                children: [
-                  Radio<int>(
-                    activeColor: CustomColor.primaryDarkColor,
-                    fillColor: WidgetStateProperty.resolveWith((states) {
-                      return (widget.isDefault)
-                          ? CustomColor.primaryDarkColor
-                          : CustomColor.grayTextColor.withOpacity(0.7);
-                    }),
-                    value: widget.address.id,
-                    groupValue: widget.defaultAddress,
-                    onChanged: widget.onDefaultAddressChanged,
-                    visualDensity: VisualDensity.compact,
-                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  ),
-                  const Text(
-                    TextStrings.makeDefault,
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 0.03,
-                    ),
-                  ),
-                ],
+              child: MakeDefault(
+                value: widget.address.id,
+                groupValue: widget.defaultAddress,
+                onChanged: widget.onDefaultAddressChanged,
+                fillColor: WidgetStateProperty.resolveWith((states) {
+                  return (widget.isDefault)
+                      ? CustomColor.primaryDarkColor
+                      : CustomColor.grayTextColor.withOpacity(0.7);
+                }),
               ),
             ),
           ],
         ),
-        widget.isDefault ? const DefaultAddress() : const SizedBox.shrink(),
+        widget.isDefault ? const DefaultText() : const SizedBox.shrink(),
       ],
     );
   }

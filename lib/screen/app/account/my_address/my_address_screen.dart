@@ -1,3 +1,4 @@
+import 'package:big_cart_app/screen/app/account/widget/save_settings_button.dart';
 import 'package:big_cart_app/screen/widget/add_button.dart';
 import 'package:big_cart_app/screen/widget/back_icon_button.dart';
 import 'package:big_cart_app/utils/constants/app_data.dart';
@@ -18,6 +19,10 @@ class MyAddressScreen extends StatefulWidget {
 
 class _MyAddressScreenState extends State<MyAddressScreen> {
   int defaultAddress = 1;
+  List<bool> isExpandedStateList = List<bool>.generate(
+    AppData.addresses.length,
+    (int index) => false,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +33,7 @@ class _MyAddressScreenState extends State<MyAddressScreen> {
         actions: [AddButton(onPressed: () {})],
       ),
       body: ListView.separated(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 20, bottom: 100),
         itemCount: AppData.addresses.length,
         separatorBuilder: (_, __) => const SizedBox(height: 15),
         itemBuilder: (ctx, index) {
@@ -36,12 +41,15 @@ class _MyAddressScreenState extends State<MyAddressScreen> {
 
           return MyAddressTile(
             address: address,
+            initiallyExpanded: isExpandedStateList[index],
             isDefault: defaultAddress == address.id,
             defaultAddress: defaultAddress,
             onDefaultAddressChanged: (value) => setState(() => defaultAddress = value!),
+            onExpansionChanged: (value) => setState(() => isExpandedStateList[index] = value),
           );
         },
       ),
+      bottomSheet: SaveSettingsButton(onPressed: () {}),
     );
   }
 }

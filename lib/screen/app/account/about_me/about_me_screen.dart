@@ -21,6 +21,12 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
   bool obscureCurrentPasswordText = true;
   bool obscureNewPasswordText = true;
   bool obscureConfirmNewPasswordText = true;
+  final style = const TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+    color: Colors.black,
+    letterSpacing: 0.03,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -38,24 +44,27 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
             children: [
               const TitleText(title: TextStrings.personalDetails),
               const SizedBox(height: 10),
-              const TextInputField(
+              TextInputField(
                 initialValue: 'Russell Austin',
                 hintText: TextStrings.fullName,
-                prefixIcon: Icon(Icons.account_circle_outlined),
+                prefixIcon: const Icon(Icons.account_circle_outlined),
+                style: style,
               ),
               const SizedBox(height: 5),
-              const TextInputField(
+              TextInputField(
                 initialValue: 'russell.partner@gmail.com',
                 hintText: TextStrings.emailAddress,
                 inputType: TextInputType.emailAddress,
-                prefixIcon: Icon(Icons.email_outlined),
+                prefixIcon: const Icon(Icons.email_outlined),
+                style: style,
               ),
               const SizedBox(height: 5),
-              const TextInputField(
+              TextInputField(
                 initialValue: '+1 202 555 0142',
                 hintText: TextStrings.phoneNumber,
                 inputType: TextInputType.phone,
-                prefixIcon: Icon(Icons.phone),
+                prefixIcon: const Icon(Icons.phone),
+                style: style,
               ),
               const SizedBox(height: 30),
               const TitleText(title: TextStrings.changePassword),
@@ -67,6 +76,7 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
                 toggle: () {
                   setState(() => obscureCurrentPasswordText = !obscureCurrentPasswordText);
                 },
+                style: style,
               ),
               const SizedBox(height: 5),
               PasswordInputField(
@@ -76,6 +86,7 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
                 toggle: () {
                   setState(() => obscureNewPasswordText = !obscureNewPasswordText);
                 },
+                style: style,
               ),
               const SizedBox(height: 5),
               PasswordInputField(
@@ -85,6 +96,7 @@ class _AboutMeScreenState extends State<AboutMeScreen> {
                 toggle: () {
                   setState(() => obscureConfirmNewPasswordText = !obscureConfirmNewPasswordText);
                 },
+                style: style,
               ),
             ],
           ),

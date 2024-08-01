@@ -78,7 +78,12 @@ class _MyAddressTileState extends State<MyAddressTile> {
       children: [
         ExpansionTile(
           childrenPadding: const EdgeInsets.only(top: 10, bottom: 20),
-          tilePadding: const EdgeInsets.only(left: 16, right: 16, top: 20, bottom: 2),
+          tilePadding: EdgeInsets.only(
+            left: 16,
+            right: 16,
+            top: widget.isDefault ? 15 : 7,
+            bottom: 2,
+          ),
           backgroundColor: Colors.white,
           collapsedBackgroundColor: Colors.white,
           shape: const Border(),

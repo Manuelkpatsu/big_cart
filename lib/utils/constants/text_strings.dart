@@ -121,4 +121,16 @@ class TextStrings {
   static const String defaultText = "Default";
   static const String addAddress = "Add Address";
   static const String addAddressButton = "Add address";
+
+  // Orders
+  static const String order = "Order";
+  static const String orderPlaced = "Order Placed";
+  static const String orderConfirmed = "Order Confirmed";
+  static const String orderShipped = "Order Shipped";
+  static const String outForDelivery = "Out For Delivery";
+  static const String orderDelivered = "Order Delivered";
+  static const String pending = "Pending";
+  static const String items = "Items";
+  static const String amount = "Amount";
+  static const String placedOn = "Placed on";
 }

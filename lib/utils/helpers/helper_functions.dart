@@ -25,4 +25,8 @@ class HelperFunctions {
 
     return '$date at $time';
   }
+
+  static String formatDate({required DateTime date, required String pattern}) {
+    return DateFormat(pattern).format(date);
+  }
 }

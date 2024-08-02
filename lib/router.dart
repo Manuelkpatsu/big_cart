@@ -1,3 +1,4 @@
+import 'package:big_cart_app/model/order.dart';
 import 'package:flutter/material.dart';
 
 import 'screen/app/account/about_me/about_me_screen.dart';
@@ -6,6 +7,7 @@ import 'screen/app/account/add_address/add_address_screen.dart';
 import 'screen/app/account/my_address/my_address_screen.dart';
 import 'screen/app/account/my_orders/my_orders_screen.dart';
 import 'screen/app/account/notifications_settings/notifications_settings_screen.dart';
+import 'screen/app/account/track_order/track_order_screen.dart';
 import 'screen/app/account/transactions/transactions_screen.dart';
 import 'screen/app/app.dart';
 import 'screen/app/home/home_screen.dart';
@@ -54,6 +56,9 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const AddAddressScreen());
       case MyOrdersScreen.routeName:
         return MaterialPageRoute(builder: (_) => const MyOrdersScreen());
+      case TrackOrderScreen.routeName:
+        Order order = settings.arguments as Order;
+        return MaterialPageRoute(builder: (_) => TrackOrderScreen(order: order));
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

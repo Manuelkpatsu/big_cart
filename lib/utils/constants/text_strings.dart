@@ -133,4 +133,5 @@ class TextStrings {
   static const String items = "Items";
   static const String amount = "Amount";
   static const String placedOn = "Placed on";
+  static const String trackOrder = "Track Order";
 }

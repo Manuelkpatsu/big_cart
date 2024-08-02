@@ -61,4 +61,17 @@ class ImageStrings {
   // Address
   static const String arrowDown = "assets/images/arrow_down.png";
   static const String arrowUp = "assets/images/arrow_up.png";
+
+  // Order
+  static const String activeOrderPlacedIcon = "assets/images/active-placed-icon.png";
+  static const String orderPlacedIcon = "assets/images/placed-icon.png";
+  static const String activeOrderConfirmedIcon = "assets/images/active-confirmed-icon.png";
+  static const String orderConfirmedIcon = "assets/images/confirmed-icon.png";
+  static const String activeOrderShippedIcon = "assets/images/active-shipped-icon.png";
+  static const String orderShippedIcon = "assets/images/shipped-icon.png";
+  static const String activeOutForDeliveryIcon = "assets/images/active-delivery-icon.png";
+  static const String outForDeliveryIcon = "assets/images/delivery-icon.png";
+  static const String activeOrderDeliveredIcon = "assets/images/active-delivered-icon.png";
+  static const String orderDeliveredIcon = "assets/images/delivered-icon.png";
+  static const String order = "assets/images/order.png";
 }

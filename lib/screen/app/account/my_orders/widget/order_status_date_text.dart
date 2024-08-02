@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 
 class OrderStatusDateText extends StatelessWidget {
   final DateTime date;
+  final String pattern;
 
-  const OrderStatusDateText({super.key, required this.date});
+  const OrderStatusDateText({super.key, required this.date, this.pattern = 'MMM dd y'});
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      HelperFunctions.formatDate(date: date, pattern: 'MMM dd y'),
+      HelperFunctions.formatDate(date: date, pattern: pattern),
       style: const TextStyle(fontSize: 12, letterSpacing: 0.03, color: CustomColor.grayTextColor),
     );
   }

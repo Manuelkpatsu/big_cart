@@ -6,6 +6,7 @@ import 'package:big_cart_app/screen/app/account/widget/order_number_text.dart';
 import 'package:big_cart_app/screen/app/account/widget/order_placed_date_text.dart';
 import 'package:big_cart_app/screen/widget/circular_image.dart';
 import 'package:big_cart_app/theme/custom_color.dart';
+import 'package:big_cart_app/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:timelines/timelines.dart';
 
@@ -43,7 +44,7 @@ class OrderTile extends StatelessWidget {
           imageWidth: 42,
           imageHeight: 30,
           backgroundColor: CustomColor.primaryLightColor,
-          image: 'assets/images/order.png',
+          image: ImageStrings.activeOrderPlacedIcon,
         ),
         title: OrderNumberText(id: order.orderId),
         subtitle: Column(

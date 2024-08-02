@@ -1,3 +1,4 @@
+import 'package:big_cart_app/screen/app/account/track_order/track_order_screen.dart';
 import 'package:big_cart_app/screen/widget/back_icon_button.dart';
 import 'package:big_cart_app/utils/constants/app_data.dart';
 import 'package:big_cart_app/utils/constants/text_strings.dart';
@@ -33,7 +34,11 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
           final order = AppData.orders[index];
 
           return OrderTile(
-            onLongPress: () {},
+            onLongPress: () => HelperFunctions.navigateToScreen(
+              context: context,
+              routeName: TrackOrderScreen.routeName,
+              arguments: order,
+            ),
             order: order,
             initiallyExpanded: isExpandedStateList[index],
             onExpansionChanged: (value) => setState(() => isExpandedStateList[index] = value),

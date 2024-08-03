@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'about_me/about_me_screen.dart';
 import 'my_address/my_address_screen.dart';
+import 'my_cards/my_cards_screen.dart';
 import 'my_orders/my_orders_screen.dart';
 import 'notifications_settings/notifications_settings_screen.dart';
 import 'transactions/transactions_screen.dart';
@@ -98,7 +99,10 @@ class AccountScreen extends StatelessWidget {
                 AccountNavTile(
                   image: ImageStrings.creditCards,
                   title: TextStrings.creditCards,
-                  onPressed: () {},
+                  onPressed: () => HelperFunctions.navigateToScreen(
+                    context: context,
+                    routeName: MyCardsScreen.routeName,
+                  ),
                   trailing: const Icon(Icons.chevron_right, color: CustomColor.grayTextColor),
                 ),
                 AccountNavTile(

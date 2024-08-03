@@ -5,6 +5,7 @@ import 'screen/app/account/about_me/about_me_screen.dart';
 import 'screen/app/account/account_screen.dart';
 import 'screen/app/account/add_address/add_address_screen.dart';
 import 'screen/app/account/my_address/my_address_screen.dart';
+import 'screen/app/account/my_cards/my_cards_screen.dart';
 import 'screen/app/account/my_orders/my_orders_screen.dart';
 import 'screen/app/account/notifications_settings/notifications_settings_screen.dart';
 import 'screen/app/account/track_order/track_order_screen.dart';
@@ -59,6 +60,8 @@ class AppRouter {
       case TrackOrderScreen.routeName:
         Order order = settings.arguments as Order;
         return MaterialPageRoute(builder: (_) => TrackOrderScreen(order: order));
+      case MyCardsScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const MyCardsScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

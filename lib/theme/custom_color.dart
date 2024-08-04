@@ -19,6 +19,10 @@ class CustomColor {
     stops: [0.01, 1.0],
     colors: [primaryColor, primaryDarkColor],
   );
+  static const LinearGradient cardGradient = LinearGradient(
+    stops: [0.01, 1.0],
+    colors: [primaryDarkColor, primaryColor],
+  );
   static const Color vegetablesColor = Color(0xffe6f2ea);
   static const Color groceryColor = Color(0xfff3effa);
   static const Color fruitsColor = Color(0xffffe9e5);

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'screen/app/account/about_me/about_me_screen.dart';
 import 'screen/app/account/account_screen.dart';
 import 'screen/app/account/add_address/add_address_screen.dart';
+import 'screen/app/account/add_credit_card/add_credit_card_screen.dart';
 import 'screen/app/account/my_address/my_address_screen.dart';
 import 'screen/app/account/my_cards/my_cards_screen.dart';
 import 'screen/app/account/my_orders/my_orders_screen.dart';
@@ -62,6 +63,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => TrackOrderScreen(order: order));
       case MyCardsScreen.routeName:
         return MaterialPageRoute(builder: (_) => const MyCardsScreen());
+      case AddCreditCardScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const AddCreditCardScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

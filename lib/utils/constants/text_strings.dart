@@ -137,4 +137,10 @@ class TextStrings {
 
   // Cards
   static const String myCards = "My Cards";
+  static const String addCreditCard = "Add Credit Card";
+  static const String addCreditCardButton = "Add credit card";
+  static const String cardNumber = "Card Number";
+  static const String nameOnTheCard = "Name on the card";
+  static const String cvv = "CVV";
+  static const String monthAndYear = "MM/YY";
 }

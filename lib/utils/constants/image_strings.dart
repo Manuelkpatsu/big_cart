@@ -57,6 +57,12 @@ class ImageStrings {
   static const String masterCard = "assets/images/payment_types/master_card.png";
   static const String paypal = "assets/images/payment_types/paypal.png";
   static const String visa = "assets/images/payment_types/visa.png";
+  static const String discover = "assets/images/payment_types/discover.png";
+  static const String elo = "assets/images/payment_types/elo.png";
+  static const String hiperCard = "assets/images/payment_types/hipercard.png";
+  static const String rupay = "assets/images/payment_types/rupay.png";
+  static const String unionPay = "assets/images/payment_types/union_pay.png";
+  static const String americanExpress = "assets/images/payment_types/american_express.png";
 
   // Address
   static const String arrowDown = "assets/images/arrow_down.png";
